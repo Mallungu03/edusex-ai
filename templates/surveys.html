@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">Gestão de Inquéritos</h1>
+<section class="panel">
+  <form id="surveyForm" class="row g-3">
+    <div class="col-md-2"><input class="form-control" name="age" type="number" min="10" max="80" placeholder="Idade" required></div>
+    <div class="col-md-3"><input class="form-control" name="gender" placeholder="Sexo" required></div>
+    <div class="col-md-3"><input class="form-control" name="province" placeholder="Província" required></div>
+    <div class="col-md-4"><input class="form-control" name="municipality" placeholder="Município" required></div>
+    <div class="col-md-4">
+      <select class="form-select" name="sourceOfInformation" required>
+        <option value="">Fonte de informação</option>
+        <option>Escola</option><option>Família</option><option>Colegas</option><option>Redes sociais</option><option>Serviços de saúde</option>
+      </select>
+    </div>
+    <div class="col-md-8 checks">
+      <label><input type="checkbox" name="receivedSexEducation"> Recebeu educação sexual</label>
+      <label><input type="checkbox" name="schoolEducation"> Educação sexual escolar</label>
+      <label><input type="checkbox" name="needMoreInformation"> Precisa de mais informação</label>
+      <label><input type="checkbox" name="pressuredToHaveSex"> Sofreu pressão social</label>
+      <label><input type="checkbox" name="feelsEmbarrassed"> Sente vergonha</label>
+      <label><input type="checkbox" name="contraceptiveUse"> Usa contraceptivos</label>
+    </div>
+    <div class="col-12"><button class="btn btn-primary" type="submit">Guardar resposta</button></div>
+  </form>
+  <div id="surveyMessage" class="mt-3"></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/surveys.js') }}"></script>
+{% endblock %}

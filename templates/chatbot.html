@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">Chatbot Educativo</h1>
+<section class="panel chat-panel">
+  <div id="chatLog" class="chat-log"></div>
+  <form id="chatForm" class="input-group mt-3">
+    <input class="form-control" name="question" placeholder="Pergunte sobre ISTs, puberdade, consentimento..." required>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+{% endblock %}

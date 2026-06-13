@@ -1,0 +1,501 @@
+age,gender,province,municipality,receivedSexEducation,sourceOfInformation,schoolEducation,needMoreInformation,pressuredToHaveSex,feelsEmbarrassed,contraceptiveUse,created_at
+18,Feminino,Huambo,Bailundo,False,Escola,False,False,False,True,True,2025-08-12
+21,Masculino,Luanda,Cazenga,True,Escola,True,False,False,True,False,2025-01-07
+24,Masculino,Cabinda,Cabinda,True,Família,True,True,False,True,True,2025-02-14
+27,Masculino,Namibe,Tômbwa,False,Família,False,True,False,False,False,2025-02-16
+21,Masculino,Namibe,Moçâmedes,False,Redes sociais,False,True,False,True,False,2025-03-15
+16,Masculino,Huíla,Lubango,True,Escola,True,True,False,False,True,2025-11-29
+17,Masculino,Luanda,Talatona,True,Escola,True,False,True,False,False,2026-02-10
+21,Masculino,Luanda,Belas,False,Escola,False,False,False,False,True,2025-05-22
+20,Masculino,Cabinda,Cabinda,False,Redes sociais,False,True,False,False,True,2025-01-12
+20,Masculino,Cabinda,Cabinda,True,Colegas,True,False,False,True,True,2025-09-27
+13,Masculino,Huíla,Chibia,True,Escola,True,True,True,False,False,2025-01-01
+13,Masculino,Luanda,Belas,False,Serviços de saúde,False,True,False,True,False,2025-03-29
+23,Masculino,Namibe,Tômbwa,True,Colegas,False,False,False,False,False,2025-07-25
+23,Masculino,Namibe,Moçâmedes,True,Colegas,True,False,True,True,True,2025-08-24
+20,Feminino,Luanda,Talatona,True,Colegas,False,True,True,False,True,2026-04-30
+27,Feminino,Malanje,Cacuso,True,Escola,True,False,False,False,False,2025-04-11
+20,Feminino,Malanje,Malanje,True,Escola,True,True,False,False,True,2025-04-11
+23,Feminino,Namibe,Tômbwa,True,Serviços de saúde,False,False,False,True,True,2026-01-24
+14,Masculino,Luanda,Belas,False,Redes sociais,False,True,True,False,True,2025-03-01
+20,Masculino,Cabinda,Cabinda,True,Escola,True,False,True,False,False,2025-03-24
+19,Masculino,Huambo,Huambo,True,Colegas,False,False,False,False,True,2025-11-20
+21,Feminino,Huambo,Bailundo,True,Família,True,True,False,False,False,2025-03-16
+21,Feminino,Namibe,Tômbwa,True,Serviços de saúde,True,False,False,False,True,2025-06-11
+20,Feminino,Huambo,Huambo,True,Serviços de saúde,False,False,False,True,False,2025-05-18
+18,Feminino,Cabinda,Cacongo,True,Escola,True,False,False,False,True,2025-02-22
+21,Masculino,Malanje,Malanje,True,Escola,True,True,True,False,True,2026-03-14
+23,Masculino,Luanda,Cazenga,False,Redes sociais,False,True,False,True,False,2025-02-10
+16,Masculino,Cabinda,Cabinda,True,Colegas,True,False,False,False,False,2025-08-31
+18,Feminino,Uíge,Uíge,False,Escola,False,False,True,False,False,2025-04-21
+15,Feminino,Uíge,Negage,True,Escola,False,True,True,False,True,2025-07-17
+17,Feminino,Uíge,Negage,True,Serviços de saúde,True,False,False,False,True,2025-09-25
+24,Feminino,Luanda,Talatona,True,Colegas,True,False,False,True,True,2025-07-14
+12,Masculino,Luanda,Belas,False,Serviços de saúde,False,True,False,True,True,2025-11-18
+17,Masculino,Cabinda,Cacongo,True,Família,True,True,True,False,True,2026-03-07
+16,Feminino,Huambo,Bailundo,True,Serviços de saúde,False,True,False,False,False,2026-04-22
+16,Feminino,Luanda,Cazenga,False,Colegas,False,True,False,True,False,2025-12-10
+19,Masculino,Huambo,Caála,True,Escola,True,False,True,False,True,2025-07-19
+19,Feminino,Huíla,Matala,True,Escola,True,True,False,False,True,2026-03-12
+19,Masculino,Huíla,Matala,True,Escola,True,False,False,False,True,2026-03-30
+26,Masculino,Uíge,Negage,True,Família,False,True,False,False,False,2025-10-11
+21,Masculino,Huambo,Huambo,True,Escola,True,True,True,False,True,2025-06-06
+20,Masculino,Benguela,Baía Farta,True,Família,False,False,False,False,False,2025-01-21
+15,Feminino,Benguela,Benguela,False,Escola,False,True,False,False,False,2025-08-14
+24,Outro,Benguela,Baía Farta,True,Escola,True,False,True,False,True,2025-05-11
+18,Feminino,Luanda,Talatona,True,Família,False,False,True,True,True,2025-12-01
+18,Feminino,Luanda,Belas,True,Serviços de saúde,True,False,False,False,True,2025-12-25
+19,Feminino,Malanje,Cacuso,True,Colegas,True,True,True,True,False,2025-08-12
+12,Masculino,Malanje,Cacuso,True,Escola,True,False,False,True,False,2025-04-21
+12,Masculino,Huambo,Bailundo,True,Serviços de saúde,True,False,True,False,False,2025-11-05
+25,Masculino,Malanje,Cacuso,True,Redes sociais,False,False,True,False,False,2025-01-13
+14,Feminino,Luanda,Viana,True,Serviços de saúde,False,False,True,False,False,2026-05-11
+13,Feminino,Benguela,Benguela,True,Escola,False,False,False,False,False,2025-12-11
+20,Feminino,Luanda,Cazenga,False,Escola,False,True,False,True,True,2026-02-21
+15,Feminino,Cabinda,Cacongo,False,Colegas,False,True,False,True,True,2026-01-13
+15,Feminino,Benguela,Baía Farta,True,Redes sociais,True,True,True,True,True,2025-07-09
+24,Feminino,Huíla,Matala,False,Redes sociais,False,True,True,True,True,2025-07-03
+24,Feminino,Huíla,Chibia,True,Escola,False,False,False,False,True,2026-04-26
+18,Feminino,Luanda,Viana,True,Escola,False,False,True,False,False,2025-02-24
+15,Masculino,Luanda,Talatona,True,Escola,True,False,False,False,False,2025-11-01
+17,Feminino,Benguela,Baía Farta,False,Colegas,False,False,True,True,False,2025-06-10
+13,Masculino,Luanda,Cazenga,True,Escola,True,True,False,False,True,2025-08-28
+20,Feminino,Benguela,Benguela,False,Colegas,False,False,True,True,True,2025-10-23
+23,Feminino,Cabinda,Cabinda,True,Redes sociais,False,True,False,True,True,2025-04-04
+17,Feminino,Namibe,Tômbwa,True,Colegas,True,True,False,False,False,2025-10-12
+22,Masculino,Huambo,Caála,True,Colegas,True,False,False,False,False,2025-10-23
+21,Masculino,Malanje,Cacuso,True,Colegas,False,True,False,False,True,2025-01-02
+14,Masculino,Benguela,Benguela,True,Escola,True,False,False,True,False,2026-03-25
+24,Feminino,Luanda,Belas,True,Serviços de saúde,False,True,False,False,True,2025-04-27
+22,Masculino,Huambo,Bailundo,True,Escola,False,False,False,False,True,2025-07-15
+17,Masculino,Cabinda,Cacongo,True,Escola,True,False,True,False,False,2025-10-01
+13,Masculino,Cabinda,Cabinda,True,Redes sociais,False,False,False,True,True,2025-11-26
+16,Feminino,Huambo,Huambo,True,Escola,False,False,False,False,True,2025-06-05
+18,Feminino,Luanda,Viana,True,Serviços de saúde,False,False,True,True,False,2025-06-08
+20,Masculino,Benguela,Lobito,False,Redes sociais,False,False,False,False,True,2026-05-15
+17,Feminino,Huambo,Bailundo,True,Escola,True,True,False,False,False,2025-04-13
+15,Masculino,Luanda,Cazenga,True,Escola,True,True,False,False,True,2026-02-26
+22,Masculino,Luanda,Talatona,True,Escola,True,False,False,True,True,2025-09-19
+14,Masculino,Uíge,Negage,True,Colegas,True,False,False,True,False,2026-03-11
+15,Feminino,Uíge,Uíge,True,Escola,True,False,False,False,True,2026-02-10
+22,Masculino,Uíge,Uíge,False,Redes sociais,False,False,False,True,True,2025-07-14
+16,Feminino,Huambo,Huambo,True,Serviços de saúde,True,False,True,False,True,2026-03-02
+16,Masculino,Malanje,Cacuso,True,Redes sociais,True,False,True,True,False,2026-05-09
+26,Feminino,Cabinda,Cacongo,True,Família,True,False,False,False,False,2026-01-10
+25,Masculino,Luanda,Talatona,False,Colegas,False,True,False,False,False,2025-04-21
+12,Feminino,Luanda,Belas,True,Redes sociais,True,True,False,False,True,2026-02-23
+15,Masculino,Namibe,Moçâmedes,True,Família,False,False,False,True,False,2026-03-06
+21,Feminino,Uíge,Negage,True,Colegas,False,False,False,True,True,2026-01-07
+14,Feminino,Huíla,Lubango,True,Serviços de saúde,True,True,True,True,False,2026-04-11
+25,Masculino,Huambo,Huambo,True,Colegas,True,True,True,False,False,2025-08-01
+19,Feminino,Benguela,Lobito,True,Escola,False,False,True,True,True,2025-06-28
+20,Feminino,Luanda,Viana,True,Família,True,True,False,True,True,2025-03-07
+13,Feminino,Huíla,Lubango,True,Escola,True,False,False,True,False,2025-11-05
+14,Masculino,Luanda,Viana,False,Colegas,False,True,False,True,True,2025-10-09
+22,Feminino,Benguela,Lobito,True,Colegas,True,False,False,True,True,2025-08-09
+13,Feminino,Benguela,Lobito,True,Redes sociais,True,True,False,True,False,2026-05-01
+22,Feminino,Luanda,Talatona,False,Escola,False,True,False,False,True,2025-05-06
+24,Feminino,Uíge,Negage,True,Redes sociais,True,False,False,True,True,2025-04-21
+17,Masculino,Luanda,Viana,True,Escola,True,False,False,False,False,2025-01-27
+19,Feminino,Luanda,Cazenga,True,Escola,True,True,False,True,True,2025-02-01
+12,Feminino,Benguela,Baía Farta,True,Família,True,True,False,True,True,2025-02-23
+15,Feminino,Luanda,Talatona,True,Escola,True,True,False,True,True,2025-04-24
+20,Masculino,Huíla,Chibia,True,Família,True,False,True,True,False,2025-05-21
+18,Feminino,Benguela,Baía Farta,True,Escola,True,False,False,False,False,2025-03-15
+16,Feminino,Luanda,Viana,False,Escola,False,True,False,False,False,2025-04-28
+13,Feminino,Luanda,Viana,True,Serviços de saúde,True,False,False,True,True,2025-03-22
+20,Masculino,Cabinda,Cabinda,True,Escola,False,False,True,False,False,2025-12-26
+20,Masculino,Luanda,Viana,False,Escola,False,True,False,False,False,2026-04-05
+24,Feminino,Uíge,Uíge,True,Colegas,True,True,False,True,True,2025-02-27
+26,Masculino,Benguela,Baía Farta,True,Família,True,False,False,False,True,2026-04-19
+21,Masculino,Uíge,Negage,False,Família,False,True,True,False,True,2025-04-16
+18,Feminino,Namibe,Tômbwa,False,Escola,False,True,True,False,False,2026-02-01
+18,Masculino,Huambo,Bailundo,True,Escola,True,True,False,True,True,2025-09-16
+19,Feminino,Namibe,Tômbwa,False,Colegas,False,True,False,False,True,2025-03-28
+20,Masculino,Huambo,Caála,True,Família,True,False,False,False,False,2025-04-06
+15,Masculino,Huíla,Lubango,True,Escola,True,False,False,True,True,2025-10-30
+28,Feminino,Huíla,Matala,False,Colegas,False,True,False,False,False,2025-06-07
+21,Feminino,Malanje,Malanje,True,Redes sociais,True,False,False,True,True,2026-04-05
+22,Masculino,Benguela,Baía Farta,False,Redes sociais,False,True,False,False,False,2025-10-16
+21,Masculino,Huíla,Matala,True,Serviços de saúde,True,True,False,False,True,2025-04-16
+12,Masculino,Uíge,Negage,True,Família,False,False,False,True,False,2025-08-16
+15,Masculino,Namibe,Moçâmedes,True,Família,True,True,True,True,True,2025-12-10
+21,Feminino,Luanda,Cazenga,False,Serviços de saúde,False,False,False,False,False,2025-01-20
+17,Feminino,Huíla,Chibia,True,Redes sociais,True,True,False,True,False,2026-04-14
+18,Masculino,Huambo,Huambo,True,Escola,True,True,False,True,True,2025-09-04
+20,Feminino,Huambo,Caála,True,Escola,True,False,False,False,True,2026-04-27
+18,Feminino,Namibe,Tômbwa,True,Escola,True,False,False,False,False,2025-12-07
+22,Feminino,Huíla,Lubango,False,Redes sociais,False,True,True,False,False,2026-04-14
+25,Feminino,Luanda,Cazenga,True,Escola,True,False,False,False,True,2025-09-17
+24,Feminino,Luanda,Cazenga,True,Redes sociais,True,False,False,True,True,2026-01-31
+20,Masculino,Huíla,Chibia,False,Colegas,False,False,True,False,False,2025-07-04
+17,Feminino,Luanda,Belas,True,Família,False,False,False,False,False,2026-03-22
+23,Feminino,Luanda,Belas,True,Colegas,True,False,False,False,True,2026-03-25
+12,Masculino,Luanda,Viana,True,Colegas,True,True,True,True,True,2025-03-20
+26,Feminino,Benguela,Benguela,True,Colegas,True,True,False,False,True,2025-05-01
+14,Masculino,Cabinda,Cacongo,True,Escola,False,True,True,True,False,2025-03-31
+15,Masculino,Huambo,Bailundo,True,Redes sociais,False,True,False,True,False,2025-06-28
+19,Feminino,Luanda,Talatona,True,Serviços de saúde,False,False,False,False,True,2025-03-30
+16,Feminino,Namibe,Tômbwa,False,Redes sociais,False,False,False,True,False,2026-04-06
+13,Feminino,Luanda,Viana,True,Redes sociais,False,False,False,False,True,2025-11-08
+17,Feminino,Namibe,Tômbwa,False,Escola,False,True,True,True,False,2025-10-09
+15,Masculino,Huambo,Huambo,True,Escola,True,True,False,False,True,2025-02-12
+14,Masculino,Luanda,Viana,True,Serviços de saúde,False,True,False,False,True,2025-10-24
+17,Feminino,Huíla,Matala,True,Redes sociais,True,True,False,True,True,2025-05-28
+15,Feminino,Benguela,Benguela,True,Serviços de saúde,True,True,False,False,True,2025-09-05
+28,Feminino,Huíla,Lubango,True,Escola,False,False,False,False,False,2025-11-17
+22,Masculino,Huíla,Lubango,True,Colegas,False,True,False,False,False,2025-08-09
+23,Feminino,Luanda,Talatona,False,Colegas,False,False,False,True,False,2026-02-17
+15,Feminino,Luanda,Belas,True,Colegas,True,True,False,True,True,2025-05-02
+13,Masculino,Benguela,Baía Farta,True,Redes sociais,False,False,True,True,True,2025-12-08
+27,Masculino,Huíla,Matala,True,Colegas,False,False,False,True,False,2025-11-03
+18,Masculino,Malanje,Cacuso,True,Colegas,False,False,False,False,False,2025-01-28
+15,Feminino,Namibe,Moçâmedes,False,Redes sociais,False,False,True,False,False,2026-01-25
+19,Masculino,Luanda,Belas,True,Serviços de saúde,True,True,False,False,False,2026-04-28
+19,Masculino,Cabinda,Cacongo,False,Colegas,False,True,False,True,False,2025-12-17
+19,Feminino,Huambo,Caála,True,Escola,True,False,True,True,True,2026-05-16
+24,Masculino,Huambo,Huambo,True,Serviços de saúde,False,False,False,False,True,2025-12-20
+18,Feminino,Luanda,Cazenga,True,Família,True,True,True,False,True,2025-10-06
+15,Feminino,Luanda,Cazenga,False,Colegas,False,True,False,True,True,2025-05-21
+22,Masculino,Benguela,Lobito,True,Serviços de saúde,True,False,False,True,False,2025-04-02
+15,Masculino,Huíla,Lubango,False,Redes sociais,False,True,True,False,False,2026-02-11
+26,Masculino,Namibe,Moçâmedes,True,Serviços de saúde,True,False,False,True,True,2026-05-21
+15,Feminino,Uíge,Negage,True,Colegas,True,True,False,True,True,2025-07-10
+19,Outro,Malanje,Cacuso,False,Colegas,False,False,True,True,False,2025-07-09
+16,Feminino,Benguela,Benguela,True,Escola,True,True,False,False,True,2025-01-12
+21,Masculino,Cabinda,Cacongo,True,Escola,True,False,False,False,True,2025-05-01
+21,Masculino,Benguela,Baía Farta,True,Escola,False,False,False,False,False,2026-04-28
+16,Feminino,Malanje,Malanje,False,Redes sociais,False,True,False,True,True,2026-06-02
+14,Masculino,Luanda,Talatona,True,Redes sociais,True,False,False,False,False,2026-04-02
+14,Feminino,Luanda,Viana,True,Família,False,True,True,True,True,2025-03-16
+16,Masculino,Cabinda,Cacongo,True,Colegas,True,False,False,False,True,2025-07-04
+12,Feminino,Benguela,Baía Farta,True,Redes sociais,True,True,False,False,True,2025-12-23
+21,Masculino,Benguela,Lobito,False,Escola,False,False,False,False,False,2026-03-11
+17,Feminino,Luanda,Belas,True,Família,False,False,False,False,False,2025-01-17
+28,Masculino,Luanda,Belas,True,Escola,True,False,False,True,True,2025-08-28
+19,Feminino,Luanda,Viana,False,Serviços de saúde,False,False,True,False,False,2025-08-15
+27,Masculino,Luanda,Viana,False,Serviços de saúde,False,True,False,False,False,2026-01-26
+18,Masculino,Cabinda,Cacongo,True,Família,False,True,True,False,True,2025-03-01
+21,Masculino,Huíla,Lubango,True,Escola,True,True,False,False,False,2025-04-05
+18,Masculino,Luanda,Viana,True,Família,True,False,False,False,True,2025-08-02
+18,Masculino,Benguela,Baía Farta,True,Serviços de saúde,True,True,False,False,False,2025-09-06
+12,Feminino,Luanda,Talatona,True,Serviços de saúde,True,False,True,False,True,2026-05-25
+16,Feminino,Malanje,Cacuso,True,Família,True,True,False,True,False,2025-01-17
+19,Masculino,Luanda,Talatona,True,Escola,True,False,True,False,False,2026-05-16
+24,Masculino,Huíla,Lubango,True,Redes sociais,True,True,True,True,False,2025-03-02
+19,Masculino,Namibe,Moçâmedes,True,Colegas,False,False,False,True,True,2026-05-10
+14,Masculino,Luanda,Cazenga,True,Colegas,True,False,False,True,True,2026-03-17
+20,Feminino,Luanda,Cazenga,True,Escola,True,False,False,True,True,2026-02-20
+21,Feminino,Namibe,Tômbwa,False,Escola,False,True,False,False,True,2026-01-24
+21,Feminino,Luanda,Talatona,True,Escola,True,False,False,False,True,2025-02-13
+23,Masculino,Luanda,Cazenga,True,Serviços de saúde,False,False,True,False,False,2025-01-17
+17,Feminino,Cabinda,Cabinda,True,Redes sociais,True,True,False,False,False,2025-12-06
+19,Feminino,Malanje,Cacuso,True,Redes sociais,True,False,True,True,True,2025-03-19
+14,Feminino,Namibe,Tômbwa,True,Família,False,False,True,False,True,2026-01-25
+13,Feminino,Malanje,Malanje,True,Redes sociais,True,True,False,False,False,2025-11-21
+16,Feminino,Luanda,Belas,True,Família,True,True,False,False,True,2025-01-27
+21,Masculino,Huambo,Huambo,True,Redes sociais,False,True,False,False,True,2025-09-06
+18,Feminino,Cabinda,Cabinda,True,Escola,True,True,True,True,False,2026-01-05
+22,Masculino,Cabinda,Cacongo,True,Colegas,False,True,False,True,False,2026-01-25
+21,Masculino,Huíla,Chibia,True,Família,False,False,False,False,True,2026-02-12
+13,Masculino,Cabinda,Cabinda,False,Colegas,False,True,False,True,True,2025-07-24
+23,Masculino,Cabinda,Cabinda,True,Colegas,False,True,False,False,False,2026-02-23
+17,Masculino,Huambo,Bailundo,True,Escola,True,False,True,False,False,2026-05-06
+17,Masculino,Huíla,Chibia,True,Serviços de saúde,False,False,False,False,True,2025-09-12
+14,Feminino,Luanda,Viana,False,Colegas,False,True,True,False,False,2025-04-19
+13,Feminino,Luanda,Belas,True,Redes sociais,True,True,False,True,False,2025-06-04
+16,Masculino,Huíla,Chibia,True,Família,False,False,True,False,True,2025-07-31
+17,Masculino,Huíla,Matala,True,Família,True,False,False,True,False,2025-06-18
+15,Feminino,Luanda,Talatona,True,Escola,True,False,True,False,True,2025-07-08
+22,Masculino,Benguela,Baía Farta,True,Redes sociais,True,True,False,True,False,2025-03-06
+16,Masculino,Luanda,Viana,True,Família,False,False,False,False,True,2026-02-06
+21,Feminino,Benguela,Baía Farta,False,Família,False,True,False,False,True,2025-04-30
+24,Masculino,Luanda,Talatona,False,Família,False,True,False,False,False,2025-06-27
+22,Feminino,Luanda,Talatona,False,Escola,False,True,False,True,False,2026-05-22
+14,Feminino,Benguela,Benguela,True,Redes sociais,False,True,True,False,True,2025-10-23
+14,Masculino,Huambo,Caála,True,Redes sociais,False,False,False,False,False,2026-03-28
+19,Masculino,Luanda,Belas,True,Redes sociais,False,False,True,True,False,2026-03-26
+20,Masculino,Malanje,Malanje,True,Escola,True,False,True,False,True,2025-07-31
+14,Feminino,Huambo,Caála,True,Colegas,False,False,False,True,False,2025-04-08
+20,Feminino,Uíge,Negage,True,Serviços de saúde,False,False,False,False,False,2026-05-17
+17,Feminino,Huambo,Caála,True,Família,True,False,False,False,False,2026-01-13
+19,Masculino,Benguela,Lobito,True,Escola,False,False,True,False,True,2025-08-12
+12,Feminino,Huíla,Matala,True,Família,True,False,False,True,False,2025-02-19
+24,Masculino,Malanje,Cacuso,True,Família,True,True,True,False,False,2025-05-16
+24,Feminino,Luanda,Viana,True,Serviços de saúde,True,False,False,True,False,2025-06-19
+17,Feminino,Cabinda,Cacongo,True,Redes sociais,True,True,False,True,True,2026-04-01
+19,Feminino,Malanje,Cacuso,True,Serviços de saúde,True,True,False,True,False,2025-04-15
+19,Feminino,Uíge,Uíge,True,Escola,True,False,False,True,True,2025-06-18
+12,Masculino,Huambo,Caála,True,Escola,True,False,True,False,True,2025-05-07
+19,Masculino,Benguela,Baía Farta,True,Família,False,False,True,False,False,2025-01-28
+16,Feminino,Uíge,Uíge,True,Escola,True,True,False,False,False,2025-09-03
+26,Feminino,Luanda,Cazenga,True,Colegas,True,True,False,True,False,2026-03-07
+22,Masculino,Malanje,Cacuso,True,Serviços de saúde,False,True,True,True,True,2026-02-12
+15,Masculino,Benguela,Benguela,True,Família,True,True,False,True,False,2025-06-09
+15,Feminino,Huambo,Caála,False,Redes sociais,False,True,False,True,True,2025-09-08
+24,Masculino,Luanda,Viana,True,Colegas,False,True,True,True,True,2025-12-22
+21,Masculino,Luanda,Viana,True,Escola,False,False,True,False,False,2025-10-06
+22,Masculino,Cabinda,Cabinda,True,Colegas,True,False,False,False,True,2025-04-16
+21,Feminino,Luanda,Belas,True,Colegas,True,False,False,True,True,2025-06-03
+18,Feminino,Huíla,Matala,True,Serviços de saúde,True,True,True,False,True,2026-01-17
+14,Feminino,Uíge,Negage,False,Escola,False,False,False,True,True,2025-11-15
+15,Masculino,Luanda,Cazenga,True,Escola,True,False,False,False,False,2025-07-20
+17,Feminino,Luanda,Talatona,True,Serviços de saúde,True,False,False,False,True,2025-12-10
+22,Feminino,Uíge,Uíge,True,Redes sociais,True,False,False,True,False,2025-04-06
+21,Feminino,Uíge,Uíge,True,Colegas,False,False,True,True,True,2026-02-08
+19,Feminino,Benguela,Lobito,True,Serviços de saúde,True,False,False,False,True,2025-10-06
+22,Masculino,Luanda,Cazenga,True,Redes sociais,True,True,False,True,True,2026-01-02
+20,Feminino,Huíla,Lubango,True,Colegas,False,False,True,False,False,2025-06-01
+17,Masculino,Namibe,Moçâmedes,True,Família,True,True,True,False,False,2026-04-09
+19,Masculino,Luanda,Viana,True,Escola,True,False,True,True,True,2025-03-28
+17,Feminino,Uíge,Negage,True,Escola,False,False,True,False,False,2025-12-06
+13,Masculino,Luanda,Belas,True,Serviços de saúde,False,False,False,False,True,2026-04-02
+21,Feminino,Huambo,Bailundo,False,Colegas,False,False,True,True,False,2026-03-06
+18,Feminino,Luanda,Viana,True,Serviços de saúde,True,False,False,False,True,2026-05-30
+18,Masculino,Luanda,Cazenga,True,Família,True,False,True,False,False,2026-01-02
+17,Feminino,Namibe,Moçâmedes,False,Escola,False,True,True,False,False,2026-02-02
+16,Masculino,Luanda,Cazenga,False,Colegas,False,False,False,True,False,2025-05-26
+23,Feminino,Malanje,Malanje,True,Redes sociais,True,True,False,True,True,2026-05-05
+18,Masculino,Malanje,Cacuso,True,Família,True,False,True,False,True,2025-05-26
+22,Masculino,Namibe,Moçâmedes,True,Família,True,True,True,True,False,2026-05-14
+17,Feminino,Cabinda,Cabinda,False,Colegas,False,True,False,False,False,2025-10-29
+12,Masculino,Namibe,Moçâmedes,True,Serviços de saúde,False,False,False,False,True,2025-04-17
+27,Feminino,Benguela,Benguela,True,Escola,True,True,False,False,False,2025-12-10
+14,Feminino,Luanda,Talatona,True,Redes sociais,False,False,True,True,True,2026-01-23
+24,Feminino,Luanda,Viana,False,Colegas,False,True,True,True,False,2025-10-29
+20,Masculino,Namibe,Tômbwa,False,Escola,False,False,False,True,False,2026-05-10
+22,Masculino,Namibe,Tômbwa,True,Escola,False,True,True,True,False,2025-09-29
+12,Feminino,Luanda,Belas,True,Escola,True,True,True,False,False,2026-05-07
+15,Feminino,Luanda,Talatona,True,Colegas,False,True,False,False,False,2025-09-29
+16,Feminino,Luanda,Viana,True,Redes sociais,True,False,True,True,True,2025-04-10
+22,Masculino,Malanje,Malanje,True,Família,False,True,False,False,False,2026-05-02
+24,Masculino,Huíla,Chibia,True,Escola,True,False,False,False,False,2025-05-04
+15,Masculino,Luanda,Viana,False,Serviços de saúde,False,True,False,False,False,2025-06-01
+19,Feminino,Benguela,Lobito,False,Redes sociais,False,False,False,True,True,2026-03-06
+17,Masculino,Luanda,Viana,False,Colegas,False,False,True,False,True,2025-12-19
+18,Masculino,Benguela,Lobito,True,Colegas,True,True,False,False,True,2025-12-06
+18,Masculino,Cabinda,Cabinda,True,Serviços de saúde,False,False,True,True,True,2025-04-11
+12,Masculino,Luanda,Viana,True,Serviços de saúde,True,True,True,False,True,2026-02-21
+21,Feminino,Malanje,Malanje,True,Colegas,True,True,True,True,False,2025-01-30
+12,Feminino,Malanje,Cacuso,True,Escola,False,False,False,False,True,2025-02-01
+21,Feminino,Huambo,Caála,False,Escola,False,True,False,True,False,2025-04-03
+19,Feminino,Luanda,Cazenga,True,Redes sociais,True,True,False,True,True,2025-01-10
+16,Feminino,Huambo,Caála,True,Colegas,True,True,True,False,False,2025-10-09
+19,Masculino,Uíge,Negage,False,Família,False,True,False,True,False,2026-01-19
+22,Feminino,Luanda,Cazenga,True,Escola,True,False,False,False,True,2025-11-02
+20,Feminino,Uíge,Uíge,False,Redes sociais,False,False,False,False,True,2026-03-05
+13,Masculino,Huambo,Huambo,True,Serviços de saúde,False,False,False,False,True,2026-01-03
+19,Masculino,Uíge,Uíge,True,Redes sociais,True,True,False,False,True,2025-12-10
+20,Feminino,Benguela,Baía Farta,True,Redes sociais,True,False,False,True,True,2025-05-01
+26,Outro,Huambo,Caála,False,Serviços de saúde,False,True,True,True,False,2025-05-21
+22,Feminino,Benguela,Lobito,True,Colegas,False,True,False,False,True,2025-07-01
+19,Feminino,Luanda,Talatona,False,Escola,False,False,False,True,False,2026-02-18
+16,Feminino,Benguela,Lobito,True,Escola,True,True,True,True,False,2025-07-15
+17,Masculino,Huambo,Caála,True,Escola,True,True,True,False,False,2025-11-02
+15,Masculino,Cabinda,Cabinda,True,Colegas,True,False,True,False,False,2026-01-03
+16,Feminino,Namibe,Tômbwa,True,Serviços de saúde,False,False,True,False,True,2025-02-08
+20,Feminino,Malanje,Cacuso,True,Colegas,False,True,True,False,True,2026-03-31
+17,Feminino,Huíla,Lubango,True,Escola,True,False,True,False,True,2025-05-21
+13,Feminino,Huíla,Chibia,True,Colegas,True,False,False,True,False,2025-07-26
+16,Feminino,Luanda,Belas,True,Escola,False,True,False,False,False,2026-05-21
+19,Feminino,Malanje,Malanje,False,Escola,False,True,False,False,True,2025-02-21
+15,Masculino,Uíge,Uíge,True,Redes sociais,True,True,False,False,True,2025-05-22
+23,Masculino,Benguela,Benguela,True,Redes sociais,False,False,False,True,True,2026-02-14
+14,Feminino,Malanje,Cacuso,True,Redes sociais,False,True,False,False,False,2025-04-17
+19,Feminino,Malanje,Cacuso,True,Colegas,True,True,True,True,False,2025-05-14
+21,Masculino,Luanda,Viana,True,Família,True,False,False,False,True,2025-08-18
+19,Masculino,Huíla,Matala,True,Redes sociais,False,False,False,True,False,2025-06-02
+28,Masculino,Uíge,Uíge,True,Colegas,False,False,False,True,True,2025-12-05
+19,Masculino,Huíla,Chibia,True,Colegas,True,False,False,True,True,2025-04-01
+18,Masculino,Benguela,Baía Farta,True,Serviços de saúde,True,True,False,False,False,2025-11-08
+18,Masculino,Luanda,Viana,True,Colegas,False,True,False,True,True,2026-04-30
+19,Feminino,Cabinda,Cabinda,True,Escola,True,False,True,False,True,2025-04-19
+16,Feminino,Huíla,Lubango,True,Redes sociais,False,True,True,True,False,2025-08-09
+12,Masculino,Cabinda,Cabinda,False,Escola,False,False,False,False,False,2025-05-18
+23,Masculino,Huíla,Lubango,False,Escola,False,True,False,False,True,2025-06-27
+16,Masculino,Luanda,Talatona,True,Colegas,False,False,True,False,True,2025-12-18
+16,Masculino,Malanje,Malanje,True,Escola,True,False,False,False,True,2025-11-18
+18,Masculino,Luanda,Viana,False,Colegas,False,True,False,False,False,2025-11-27
+22,Masculino,Huambo,Bailundo,False,Colegas,False,True,False,False,False,2026-03-09
+20,Masculino,Luanda,Viana,True,Família,True,False,False,False,True,2025-03-05
+19,Masculino,Luanda,Talatona,True,Colegas,True,False,False,False,True,2025-08-18
+19,Feminino,Luanda,Viana,False,Redes sociais,False,True,False,False,True,2025-02-25
+15,Masculino,Luanda,Cazenga,True,Redes sociais,False,True,False,False,True,2025-07-21
+17,Feminino,Luanda,Viana,True,Escola,True,False,False,False,True,2025-05-14
+16,Feminino,Luanda,Viana,True,Colegas,False,False,False,False,False,2025-11-05
+12,Masculino,Luanda,Viana,False,Redes sociais,False,True,False,True,True,2025-08-07
+17,Feminino,Benguela,Baía Farta,False,Escola,False,False,False,False,True,2025-12-21
+24,Feminino,Huambo,Bailundo,True,Colegas,True,False,False,False,True,2025-10-17
+17,Feminino,Malanje,Malanje,True,Família,False,True,True,False,True,2025-04-09
+17,Masculino,Huambo,Huambo,False,Escola,False,True,False,False,False,2026-03-22
+16,Masculino,Cabinda,Cabinda,True,Escola,True,True,True,True,False,2025-03-14
+15,Masculino,Uíge,Uíge,True,Família,True,True,True,True,False,2025-03-06
+20,Feminino,Cabinda,Cabinda,True,Escola,False,False,True,True,False,2026-03-25
+21,Masculino,Huíla,Lubango,False,Colegas,False,False,False,True,False,2026-01-18
+22,Feminino,Huíla,Matala,True,Colegas,True,True,False,False,False,2025-11-09
+14,Masculino,Uíge,Negage,True,Família,False,True,True,False,True,2025-02-25
+22,Feminino,Huambo,Bailundo,True,Escola,True,True,False,True,False,2026-01-01
+21,Masculino,Luanda,Cazenga,True,Família,False,False,True,False,True,2025-11-20
+20,Masculino,Luanda,Talatona,True,Escola,True,False,False,False,True,2025-12-06
+17,Masculino,Huíla,Lubango,True,Redes sociais,False,True,False,False,True,2025-03-20
+19,Masculino,Uíge,Uíge,False,Colegas,False,False,True,True,True,2026-04-29
+19,Masculino,Benguela,Baía Farta,True,Escola,True,False,False,False,True,2025-09-02
+12,Masculino,Cabinda,Cacongo,True,Redes sociais,True,True,False,False,False,2025-05-30
+19,Feminino,Namibe,Tômbwa,True,Escola,True,True,False,False,False,2026-02-02
+16,Masculino,Uíge,Uíge,True,Escola,True,True,False,False,True,2025-09-27
+12,Feminino,Benguela,Benguela,True,Família,True,True,True,False,True,2025-12-20
+14,Feminino,Uíge,Uíge,True,Escola,False,True,True,False,True,2025-06-11
+18,Masculino,Huambo,Huambo,True,Família,False,False,False,False,True,2025-05-11
+20,Masculino,Luanda,Viana,True,Colegas,False,True,False,False,True,2025-01-20
+15,Masculino,Namibe,Tômbwa,True,Escola,True,True,True,False,True,2025-07-06
+16,Masculino,Luanda,Cazenga,False,Redes sociais,False,True,True,True,True,2026-06-01
+23,Masculino,Huambo,Bailundo,False,Escola,False,False,False,True,False,2025-01-02
+15,Feminino,Huambo,Bailundo,True,Colegas,True,True,True,True,False,2026-01-26
+15,Feminino,Uíge,Uíge,True,Redes sociais,True,False,True,False,True,2026-02-23
+17,Feminino,Cabinda,Cacongo,True,Redes sociais,False,True,False,False,True,2026-01-06
+21,Feminino,Huambo,Bailundo,True,Escola,True,True,False,False,True,2026-05-10
+15,Masculino,Huíla,Chibia,True,Escola,True,True,False,False,False,2025-05-02
+22,Masculino,Malanje,Malanje,False,Serviços de saúde,False,True,True,False,False,2025-01-06
+21,Masculino,Huíla,Matala,True,Colegas,True,True,False,True,False,2026-02-15
+25,Feminino,Luanda,Cazenga,True,Serviços de saúde,True,False,False,True,False,2025-10-20
+21,Feminino,Huambo,Caála,True,Colegas,True,False,True,False,True,2026-02-14
+25,Feminino,Benguela,Lobito,False,Escola,False,False,False,False,True,2025-10-11
+19,Masculino,Huíla,Matala,True,Família,True,True,False,False,True,2025-12-15
+21,Masculino,Namibe,Moçâmedes,False,Redes sociais,False,True,False,False,False,2026-04-15
+14,Masculino,Huíla,Matala,True,Escola,True,False,False,True,False,2026-02-27
+18,Feminino,Huíla,Matala,True,Redes sociais,True,False,False,True,True,2025-11-18
+22,Feminino,Luanda,Cazenga,False,Serviços de saúde,False,True,False,True,False,2025-07-31
+19,Masculino,Malanje,Cacuso,True,Família,True,False,True,False,False,2025-02-13
+17,Feminino,Huambo,Bailundo,False,Colegas,False,False,False,True,False,2025-10-14
+12,Masculino,Luanda,Talatona,True,Colegas,True,True,False,False,True,2025-05-04
+23,Masculino,Benguela,Lobito,True,Escola,True,True,False,True,False,2025-07-11
+17,Feminino,Luanda,Cazenga,True,Serviços de saúde,True,True,True,False,True,2026-04-07
+21,Feminino,Namibe,Moçâmedes,False,Redes sociais,False,False,False,False,True,2025-06-03
+26,Feminino,Luanda,Cazenga,False,Colegas,False,False,False,True,False,2026-02-12
+18,Feminino,Luanda,Talatona,False,Redes sociais,False,True,True,True,False,2025-09-21
+21,Masculino,Luanda,Talatona,False,Redes sociais,False,True,False,False,False,2026-05-15
+18,Feminino,Uíge,Negage,True,Família,True,False,True,True,False,2025-12-12
+20,Masculino,Uíge,Negage,True,Escola,True,True,False,True,True,2026-04-01
+21,Feminino,Cabinda,Cacongo,True,Colegas,False,False,True,True,True,2025-03-23
+22,Feminino,Luanda,Talatona,True,Escola,True,True,True,False,True,2025-06-09
+15,Masculino,Benguela,Benguela,True,Escola,True,False,False,True,True,2026-01-01
+25,Masculino,Uíge,Negage,True,Colegas,False,False,False,True,True,2026-03-22
+12,Feminino,Uíge,Uíge,True,Colegas,True,True,False,True,True,2025-01-11
+28,Masculino,Benguela,Lobito,True,Colegas,False,True,False,True,True,2025-01-08
+19,Feminino,Benguela,Baía Farta,True,Colegas,True,True,False,False,True,2025-09-27
+25,Feminino,Luanda,Belas,True,Redes sociais,False,False,False,False,False,2025-07-06
+15,Feminino,Huambo,Huambo,True,Colegas,True,False,True,True,True,2025-01-23
+18,Outro,Luanda,Talatona,True,Escola,True,True,False,True,False,2026-05-26
+19,Feminino,Cabinda,Cacongo,True,Escola,True,False,True,True,True,2026-04-27
+23,Masculino,Malanje,Malanje,True,Redes sociais,True,False,False,True,True,2026-04-17
+23,Feminino,Huíla,Matala,False,Serviços de saúde,False,True,False,True,True,2025-05-06
+24,Masculino,Luanda,Belas,True,Família,False,False,False,True,True,2026-02-10
+20,Masculino,Namibe,Moçâmedes,False,Colegas,False,True,False,False,False,2025-12-13
+16,Masculino,Luanda,Belas,True,Colegas,True,True,False,False,False,2026-03-26
+12,Feminino,Cabinda,Cabinda,True,Família,True,False,False,False,True,2026-05-17
+12,Feminino,Huíla,Matala,False,Família,False,True,False,False,False,2026-01-11
+20,Feminino,Huíla,Matala,False,Redes sociais,False,True,False,False,True,2026-02-01
+16,Feminino,Huíla,Chibia,True,Colegas,False,False,False,True,True,2025-02-02
+16,Feminino,Luanda,Belas,True,Escola,True,True,False,False,True,2025-02-20
+13,Masculino,Luanda,Belas,True,Serviços de saúde,False,False,False,False,False,2026-01-13
+12,Feminino,Malanje,Malanje,True,Escola,True,True,False,True,False,2025-04-10
+16,Masculino,Huíla,Matala,True,Escola,True,True,False,False,True,2026-01-02
+18,Masculino,Huambo,Caála,True,Redes sociais,True,True,True,True,True,2026-03-30
+21,Feminino,Huíla,Chibia,False,Serviços de saúde,False,True,False,True,False,2025-09-18
+15,Outro,Huíla,Lubango,False,Família,False,True,False,False,True,2025-11-04
+21,Feminino,Uíge,Uíge,True,Escola,True,False,False,False,True,2025-02-08
+13,Masculino,Luanda,Talatona,True,Família,False,False,False,True,False,2025-03-21
+17,Masculino,Luanda,Viana,False,Redes sociais,False,True,False,False,True,2025-02-27
+14,Masculino,Benguela,Baía Farta,True,Redes sociais,True,False,True,False,False,2025-01-12
+23,Masculino,Benguela,Baía Farta,True,Família,True,False,True,True,False,2026-02-07
+20,Masculino,Huambo,Caála,True,Escola,True,False,False,True,True,2025-02-20
+19,Feminino,Luanda,Viana,True,Colegas,True,False,False,True,True,2025-09-10
+16,Masculino,Malanje,Malanje,True,Família,False,False,True,False,True,2025-01-25
+23,Feminino,Namibe,Moçâmedes,True,Colegas,True,True,True,False,True,2025-03-29
+18,Feminino,Luanda,Belas,True,Colegas,True,False,True,True,False,2025-11-09
+20,Masculino,Benguela,Baía Farta,False,Redes sociais,False,True,False,False,False,2026-01-21
+23,Feminino,Huíla,Matala,True,Escola,True,True,False,False,True,2025-01-09
+14,Masculino,Luanda,Talatona,True,Redes sociais,True,False,True,False,True,2025-04-12
+12,Masculino,Uíge,Negage,True,Colegas,True,False,False,True,True,2025-09-11
+21,Masculino,Benguela,Benguela,True,Família,True,False,False,True,True,2025-03-05
+22,Feminino,Uíge,Negage,True,Redes sociais,True,False,True,True,False,2025-05-21
+23,Masculino,Huíla,Lubango,True,Colegas,True,False,False,True,True,2026-04-05
+14,Outro,Huambo,Huambo,True,Colegas,False,True,False,False,False,2026-03-17
+19,Masculino,Huambo,Caála,False,Colegas,False,True,True,False,True,2025-11-23
+20,Feminino,Namibe,Tômbwa,False,Família,False,True,True,False,True,2025-05-15
+16,Masculino,Huambo,Caála,True,Colegas,True,True,True,False,False,2026-04-26
+17,Feminino,Luanda,Cazenga,True,Família,False,True,False,False,False,2026-02-27
+29,Masculino,Cabinda,Cacongo,False,Escola,False,True,False,False,False,2025-02-12
+13,Feminino,Cabinda,Cabinda,False,Família,False,True,False,False,True,2025-04-22
+12,Feminino,Uíge,Negage,True,Escola,True,True,False,False,True,2026-03-27
+16,Masculino,Malanje,Cacuso,True,Família,True,True,False,False,False,2026-04-20
+21,Masculino,Luanda,Belas,False,Colegas,False,True,True,True,False,2025-07-26
+23,Feminino,Luanda,Talatona,False,Redes sociais,False,True,True,True,False,2026-01-07
+17,Masculino,Cabinda,Cabinda,True,Serviços de saúde,False,True,False,True,False,2025-06-16
+17,Masculino,Malanje,Malanje,True,Escola,True,False,True,False,True,2025-05-15
+12,Feminino,Huambo,Caála,True,Escola,True,True,True,False,True,2026-05-03
+21,Feminino,Luanda,Belas,True,Colegas,True,False,False,False,False,2025-02-20
+22,Masculino,Huambo,Bailundo,True,Escola,False,False,False,True,True,2025-10-19
+14,Feminino,Cabinda,Cacongo,False,Colegas,False,False,True,True,False,2025-11-27
+19,Masculino,Malanje,Malanje,True,Redes sociais,False,False,False,True,True,2025-08-03
+17,Masculino,Huambo,Caála,True,Serviços de saúde,False,False,False,False,False,2026-03-14
+12,Masculino,Luanda,Cazenga,False,Colegas,False,False,False,True,False,2025-08-27
+12,Feminino,Luanda,Viana,True,Escola,True,True,False,False,False,2026-02-28
+21,Feminino,Huambo,Caála,True,Colegas,True,False,False,True,True,2025-01-07
+19,Masculino,Benguela,Baía Farta,True,Redes sociais,False,True,True,True,False,2026-05-01
+12,Masculino,Luanda,Belas,True,Escola,False,False,True,False,True,2025-11-20
+20,Masculino,Luanda,Cazenga,False,Redes sociais,False,True,False,False,True,2026-01-20
+12,Feminino,Huambo,Caála,False,Família,False,True,False,True,False,2025-09-01
+14,Masculino,Luanda,Cazenga,True,Família,True,False,False,False,True,2025-01-26
+18,Feminino,Luanda,Belas,True,Serviços de saúde,False,False,False,False,False,2025-05-16
+14,Masculino,Huíla,Lubango,True,Redes sociais,False,False,False,False,True,2026-04-24
+16,Masculino,Huíla,Matala,True,Colegas,True,False,True,True,True,2025-11-23
+23,Masculino,Luanda,Viana,True,Escola,True,True,False,False,True,2025-12-25
+18,Masculino,Luanda,Belas,True,Redes sociais,True,False,False,True,True,2026-04-28
+21,Masculino,Luanda,Viana,True,Escola,True,True,False,False,False,2026-04-02
+19,Feminino,Benguela,Benguela,True,Escola,True,False,False,False,True,2026-04-25
+12,Feminino,Cabinda,Cacongo,True,Redes sociais,False,True,False,False,False,2026-02-06
+18,Masculino,Malanje,Cacuso,True,Redes sociais,False,False,False,True,True,2025-05-11
+19,Feminino,Malanje,Malanje,True,Redes sociais,True,False,False,False,True,2026-02-28
+16,Feminino,Huíla,Matala,False,Serviços de saúde,False,False,False,False,False,2025-08-30
+21,Feminino,Luanda,Talatona,False,Serviços de saúde,False,True,False,False,False,2025-06-30
+21,Masculino,Luanda,Cazenga,True,Escola,True,False,True,False,False,2025-01-01
+12,Masculino,Huíla,Chibia,True,Família,False,True,True,False,False,2025-11-08
+24,Feminino,Cabinda,Cacongo,False,Serviços de saúde,False,False,True,False,False,2025-02-24
+18,Feminino,Luanda,Cazenga,True,Família,True,False,False,False,False,2026-02-20
+20,Masculino,Huambo,Huambo,False,Colegas,False,True,False,False,True,2025-03-15
+22,Masculino,Cabinda,Cacongo,True,Colegas,True,False,False,True,True,2026-04-12
+12,Masculino,Huambo,Caála,True,Família,True,True,True,False,True,2025-08-31
+22,Masculino,Benguela,Lobito,True,Colegas,True,False,False,False,True,2026-05-09
+30,Masculino,Luanda,Viana,True,Redes sociais,False,True,True,False,True,2025-03-21
+17,Masculino,Huambo,Caála,True,Serviços de saúde,False,False,False,False,True,2025-12-28
+24,Masculino,Luanda,Belas,False,Escola,False,True,True,False,True,2025-10-26
+15,Feminino,Luanda,Belas,True,Escola,True,False,True,True,True,2025-09-21
+18,Feminino,Huambo,Huambo,True,Serviços de saúde,True,True,True,False,True,2025-02-03
+13,Feminino,Namibe,Tômbwa,False,Colegas,False,False,False,True,False,2025-06-21
+19,Feminino,Luanda,Talatona,True,Escola,True,False,False,False,False,2025-08-28
+17,Feminino,Huíla,Matala,True,Escola,False,False,False,False,False,2025-02-12
+12,Masculino,Huambo,Bailundo,True,Serviços de saúde,False,True,False,True,True,2025-09-05
+22,Feminino,Malanje,Malanje,False,Colegas,False,True,True,True,True,2026-02-26
+18,Masculino,Cabinda,Cabinda,True,Família,True,False,False,True,False,2025-08-11
+15,Masculino,Cabinda,Cacongo,True,Escola,False,False,False,False,False,2025-04-24
+22,Feminino,Luanda,Belas,False,Colegas,False,True,False,False,True,2025-03-17
+21,Masculino,Benguela,Lobito,True,Família,True,False,False,True,True,2025-07-25
+14,Masculino,Huambo,Caála,True,Escola,True,True,True,False,True,2025-03-14
+17,Masculino,Malanje,Cacuso,True,Escola,True,False,True,True,True,2025-06-05
+23,Feminino,Huambo,Bailundo,True,Colegas,True,False,False,False,True,2025-01-04
+17,Feminino,Malanje,Cacuso,False,Colegas,False,True,False,False,False,2025-04-03
+19,Masculino,Luanda,Viana,True,Família,True,True,True,False,False,2025-04-20
+13,Feminino,Huíla,Lubango,True,Redes sociais,True,True,True,True,False,2025-09-02
+12,Feminino,Malanje,Cacuso,False,Colegas,False,True,True,True,False,2026-02-20
+19,Feminino,Namibe,Moçâmedes,False,Redes sociais,False,True,False,True,False,2025-01-20
+24,Feminino,Luanda,Cazenga,False,Colegas,False,True,False,False,True,2025-04-19
+19,Feminino,Luanda,Cazenga,True,Escola,True,False,False,False,True,2025-05-21
+17,Feminino,Malanje,Cacuso,True,Colegas,True,True,False,False,True,2025-02-11
+20,Feminino,Malanje,Cacuso,True,Escola,True,True,True,True,False,2025-10-18
+15,Masculino,Cabinda,Cabinda,True,Escola,True,False,True,False,True,2026-05-27
+15,Masculino,Huambo,Bailundo,True,Redes sociais,True,True,True,True,True,2025-04-08
+17,Feminino,Huíla,Matala,True,Colegas,True,True,False,True,False,2026-05-25
+17,Feminino,Namibe,Moçâmedes,True,Escola,True,True,False,True,False,2026-04-10
+20,Masculino,Namibe,Tômbwa,True,Escola,True,False,False,False,True,2025-07-23
+14,Feminino,Luanda,Talatona,True,Escola,True,True,True,False,False,2025-03-17

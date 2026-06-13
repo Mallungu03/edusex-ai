@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h1 class="page-title">Dashboard</h1>
+    <p class="text-secondary mb-0">Indicadores alimentados por respostas reais guardadas no MongoDB.</p>
+  </div>
+</div>
+<section class="row g-3" id="indicatorCards"></section>
+<section class="row g-3 mt-1">
+  <div class="col-lg-6"><div class="panel"><h2>Previsões Futuras</h2><canvas id="futureChart"></canvas></div></div>
+  <div class="col-lg-6"><div class="panel"><h2>Top 5 Insights</h2><div id="dashboardInsights"></div></div></div>
+</section>
+<section class="row g-3 mt-1">
+  <div class="col-lg-4"><div class="panel"><canvas id="genderChart"></canvas></div></div>
+  <div class="col-lg-4"><div class="panel"><canvas id="riskChart"></canvas></div></div>
+  <div class="col-lg-4"><div class="panel"><canvas id="monthlyChart"></canvas></div></div>
+  <div class="col-lg-6"><div class="panel"><canvas id="provinceChart"></canvas></div></div>
+  <div class="col-lg-6"><div class="panel"><canvas id="sourceChart"></canvas></div></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

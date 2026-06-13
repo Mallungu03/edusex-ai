@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h1 class="page-title">IA Explicável</h1>
+    <p class="text-secondary mb-0">Previsão de risco com motivos, regras e importância das variáveis.</p>
+  </div>
+</div>
+<section class="row g-3">
+  <div class="col-lg-4">
+    <div class="panel">
+      <h2>Dados do participante</h2>
+      <form id="explainForm" class="vstack gap-2">
+        <input class="form-control" name="age" type="number" value="17" min="10" max="80" aria-label="Idade">
+        <select class="form-select" name="sourceOfInformation">
+          <option>Colegas</option><option>Escola</option><option>Família</option><option>Redes sociais</option>
+        </select>
+        <label class="form-check"><input class="form-check-input" type="checkbox" name="receivedSexEducation"> Recebeu educação sexual</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" name="schoolEducation"> Educação sexual na escola</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" name="needMoreInformation" checked> Precisa de mais informação</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" name="feelsEmbarrassed" checked> Sente vergonha</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" name="contraceptiveUse"> Usa contraceptivos</label>
+        <button class="btn btn-primary" type="submit"><i class="bi bi-cpu"></i> Analisar</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-8">
+    <div class="panel" id="explainResult"></div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/ai_explanation.js') }}"></script>
+{% endblock %}

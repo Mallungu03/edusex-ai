@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">Administração</h1>
+<div class="row g-3">
+  <div class="col-lg-6 admin-only">
+    <div class="panel">
+      <h2>Importar CSV</h2>
+      <form id="uploadForm" class="vstack gap-3">
+        <input class="form-control" name="file" type="file" accept=".csv" required>
+        <button class="btn btn-primary" type="submit">Importar</button>
+      </form>
+      <pre id="uploadResult" class="result-box mt-3"></pre>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>API Key</h2>
+      <button class="btn btn-outline-primary" id="apiKeyBtn">Gerar API Key</button>
+      <pre id="apiKeyResult" class="result-box mt-3"></pre>
+    </div>
+  </div>
+  <div class="col-lg-6 admin-only">
+    <div class="panel">
+      <h2>Treinar Modelo</h2>
+      <button class="btn btn-primary" id="trainBtn">Treinar Decision Tree</button>
+      <pre id="trainResult" class="result-box mt-3"></pre>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+{% endblock %}

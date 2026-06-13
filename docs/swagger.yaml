@@ -1,0 +1,279 @@
+openapi: 3.0.3
+info:
+  title: EduSex AI API
+  version: 1.0.0
+  description: API REST para autenticação, inquéritos, analytics, chatbot e Machine Learning.
+servers:
+  - url: http://127.0.0.1:5000
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+paths:
+  /auth/register:
+    post:
+      summary: Regista utilizador
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, email, password]
+      responses:
+        "201": { description: Utilizador criado }
+  /auth/login:
+    post:
+      summary: Autentica e devolve tokens JWT
+      responses:
+        "200": { description: Tokens emitidos }
+  /auth/logout:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Revoga token atual
+      responses:
+        "200": { description: Sessão terminada }
+  /auth/refresh:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Renova access token
+      responses:
+        "200": { description: Novo token }
+  /auth/profile:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Devolve perfil autenticado
+      responses:
+        "200": { description: Perfil }
+  /surveys:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Cria resposta de inquérito
+      responses:
+        "201": { description: Resposta registada }
+  /surveys/upload:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Importa CSV de respostas
+      responses:
+        "200": { description: Resultado da importação }
+  /analytics/dashboard:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Indicadores e dados para gráficos
+      responses:
+        "200": { description: Estatísticas do dashboard }
+  /analytics/regions:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Ranking regional de desinformação
+      responses:
+        "200": { description: Ranking por província e município }
+  /analytics/insights:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Resumo automático dos dados
+      responses:
+        "200": { description: Insights analíticos }
+  /analytics/trends:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Previsões de tendências futuras
+      responses:
+        "200": { description: Projeções de indicadores }
+  /analytics/alerts:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Centro de alertas inteligentes
+      responses:
+        "200": { description: Alertas por região e faixa etária }
+  /analytics/model-comparison:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Compara modelos Decision Tree e Random Forest
+      responses:
+        "200": { description: Métricas comparativas de ML }
+  /analytics/hierarchical-clusters:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Agrupamento hierárquico de perfis
+      responses:
+        "200": { description: Grupos de risco e dendrograma }
+  /analytics/risk-profiles:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Perfis de risco A-D
+      responses:
+        "200": { description: Classificação automática de perfis }
+  /analytics/myth-detector:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Análise de mitos e verdades
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                statement:
+                  type: string
+      responses:
+        "200": { description: Resultado da análise de mito/verdade }
+  /analytics/recommendations:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Recomendações personalizadas para um participante
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200": { description: Conteúdos recomendados }
+  /analytics/report-text:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Relatório automático em texto
+      responses:
+        "200": { description: Texto do relatório }
+  /analytics/explain:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Explicação da previsão de risco
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200": { description: Explicação do modelo }
+  /chatbot/message:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Envia pergunta ao chatbot educativo
+      responses:
+        "200": { description: Resposta educativa }
+  /ml/predict:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Prediz risco usando Decision Tree ou pontuação explicável
+      responses:
+        "200": { description: Risco previsto }
+  /ml/train:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Treina modelo DecisionTreeClassifier
+      responses:
+        "200": { description: Métricas de treino }
+  /api/v1/statistics:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Estatísticas públicas anonimizadas
+      responses:
+        "200": { description: Estatísticas públicas }
+  /api/v1/indicators:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Indicadores agregados
+      responses:
+        "200": { description: Indicadores }
+  /api/v1/regions:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Indicadores regionais
+      responses:
+        "200": { description: Regiões }
+  /api/v1/clusters:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Clusters K-Means
+      responses:
+        "200": { description: Clusters }
+  /api/v1/predict:
+    post:
+      security: [{ apiKeyAuth: [] }]
+      summary: Predição pública de risco
+      responses:
+        "200": { description: Risco }
+  /api/v1/export/{format_name}:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Exporta CSV, JSON ou Excel
+      parameters:
+        - in: path
+          name: format_name
+          required: true
+          schema: { type: string, enum: [csv, json, excel] }
+      responses:
+        "200": { description: Ficheiro exportado }
+  /api/v2/insights:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Resumo avançado para pesquisadores
+      responses:
+        "200": { description: Insights executivos }
+  /api/v2/trends:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Previsões futuras de indicadores
+      responses:
+        "200": { description: Projeções de tendências }
+  /api/v2/alerts:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Alertas inteligentes para regiões e faixas etárias
+      responses:
+        "200": { description: Alertas de risco }
+  /api/v2/recommendations:
+    post:
+      security: [{ apiKeyAuth: [] }]
+      summary: Recomendações baseadas num payload opcional
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200": { description: Recomendações geradas }
+  /api/v2/generate-report:
+    post:
+      security: [{ apiKeyAuth: [] }]
+      summary: Gera relatório automático e exporta arquivo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                format:
+                  type: string
+                  enum: [txt, pdf, docx]
+      responses:
+        "200": { description: Arquivo gerado }
+  /api/v2/model-comparison:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Compara Decision Tree e Random Forest
+      responses:
+        "200": { description: Métricas de comparação }
+  /api/v2/heatmap:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Dados regionais para heatmap
+      responses:
+        "200": { description: Heatmap de desinformação }
+  /api/v2/risk-profiles:
+    get:
+      security: [{ apiKeyAuth: [] }]
+      summary: Perfis de risco A-D
+      responses:
+        "200": { description: Perfil de risco agregado }

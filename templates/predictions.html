@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">IA e Predições</h1>
+<div class="row g-3">
+  <div class="col-lg-6">
+    <div class="panel">
+      <form id="predictForm" class="vstack gap-3">
+        <input class="form-control" name="age" type="number" min="10" max="80" placeholder="Idade" required>
+        <select class="form-select" name="sourceOfInformation" required>
+          <option value="">Fonte principal</option>
+          <option>Escola</option><option>Família</option><option>Colegas</option><option>Redes sociais</option><option>Serviços de saúde</option>
+        </select>
+        <label><input type="checkbox" name="receivedSexEducation"> Recebeu educação sexual</label>
+        <label><input type="checkbox" name="feelsEmbarrassed"> Sente vergonha</label>
+        <label><input type="checkbox" name="needMoreInformation"> Precisa de mais informação</label>
+        <button class="btn btn-primary" type="submit">Predizer risco</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-6"><pre id="predictionResult" class="panel result-box"></pre></div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/predictions.js') }}"></script>
+{% endblock %}

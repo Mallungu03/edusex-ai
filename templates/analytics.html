@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">Estatísticas Regionais</h1>
+<div class="row g-3">
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Ranking por província</h2>
+      <div id="provinceRanking"></div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Ranking por município</h2>
+      <div id="municipalityRanking"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/analytics.js') }}"></script>
+{% endblock %}
