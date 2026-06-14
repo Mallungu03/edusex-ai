@@ -8,13 +8,54 @@
   <a class="btn btn-outline-primary" href="/ai-explanation"><i class="bi bi-lightbulb"></i> Explicar previsão</a>
 </div>
 <section class="row g-3" id="aiCards"></section>
+<section class="row g-3 mt-2">
+  <div class="col-lg-4">
+    <div class="panel">
+      <h3>Modelo usado</h3>
+      <div id="modelName">Carregando...</div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="panel">
+      <h3>Total análises de sentimento</h3>
+      <div id="sentimentTotal">0</div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="panel">
+      <h3>Distribuição de sentimentos</h3>
+      <canvas id="sentimentChart" height="120"></canvas>
+    </div>
+  </div>
+</section>
 <section class="row g-3 mt-1">
-  <div class="col-lg-6"><div class="panel"><h2>Previsões Futuras</h2><canvas id="trendChart"></canvas></div></div>
-  <div class="col-lg-6"><div class="panel"><h2>Perfis de risco</h2><canvas id="profileChart"></canvas></div></div>
-  <div class="col-lg-6"><div class="panel"><h2>Detetor de mitos e verdades</h2><form id="mythForm" class="input-group"><input class="form-control" name="statement" value="A pílula protege contra ISTs?"><button class="btn btn-primary" type="submit">Analisar</button></form><div id="mythResult" class="mt-3"></div></div></div>
-  <div class="col-lg-6"><div class="panel"><h2>Alertas gerados</h2><div id="aiAlerts"></div></div></div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Previsões</h2><canvas id="trendChart"></canvas>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Perfis</h2><canvas id="profileChart"></canvas>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Detetor de mitos e verdades</h2>
+      <form id="mythForm" class="input-group"><input class="form-control" name="statement"
+          value="A pílula protege contra ISTs?"><button class="btn btn-primary" type="submit">Analisar</button></form>
+      <div id="mythResult" class="mt-3"></div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel">
+      <h2>Alertas gerados</h2>
+      <div id="aiAlerts"></div>
+    </div>
+  </div>
 </section>
 {% endblock %}
 {% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ url_for('static', filename='js/ai_dashboard.js') }}"></script>
 {% endblock %}

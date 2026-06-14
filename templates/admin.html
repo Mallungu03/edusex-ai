@@ -10,6 +10,9 @@
         <button class="btn btn-primary" type="submit">Importar</button>
       </form>
       <pre id="uploadResult" class="result-box mt-3"></pre>
+      <div class="mt-3">
+        <a class="btn btn-outline-success" href="/api/v2/export-data/csv">Exportar CSV Anonimizado</a>
+      </div>
     </div>
   </div>
   <div class="col-lg-6">
@@ -24,6 +27,18 @@
       <h2>Treinar Modelo</h2>
       <button class="btn btn-primary" id="trainBtn">Treinar Decision Tree</button>
       <pre id="trainResult" class="result-box mt-3"></pre>
+    </div>
+  </div>
+  <div class="col-lg-6 admin-only">
+    <div class="panel">
+      <h2>Monitorização IA</h2>
+      <div id="aiMetrics">
+        <p>Chamadas totais: <span id="aiTotal">-</span></p>
+        <p>Erros: <span id="aiErrors">-</span></p>
+        <p>Latência média (s): <span id="aiLatency">-</span></p>
+        <p>Modelos usados:</p>
+        <pre id="aiModels" class="result-box"></pre>
+      </div>
     </div>
   </div>
 </div>

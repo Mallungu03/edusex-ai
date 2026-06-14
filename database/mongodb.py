@@ -175,6 +175,8 @@ def ensure_indexes():
         db["users"].create_index("email", unique=True)
         db["api_keys"].create_index("key", unique=True)
         db["survey_responses"].create_index("province")
+        db["sentiment_results"].create_index("created_at")
+        db["ai_logs"].create_index("created_at")
         db["jwt_blocklist"].create_index("jti", unique=True)
     except Exception:
         # A base em memória não precisa de índices.

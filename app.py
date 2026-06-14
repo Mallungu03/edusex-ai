@@ -23,6 +23,8 @@ from routes.chatbot import chatbot_bp
 from routes.ml import ml_bp
 from routes.survey import survey_bp
 from services.auth_service import init_auth, is_token_revoked
+from services.auth_service import bcrypt
+from models.user import create_user_document
 
 
 def create_app(config_class=Config):
@@ -112,8 +114,22 @@ def register_pages(app):
 
 def seed_demo_data():
     """Carrega uma amostra inicial se a base estiver vazia."""
-
     db = get_db()
+
+    # Seed administrators requested by product owners
+    admins = [
+        {"name": "Americo Malungo", "email": "americomalungo03@gmail.com", "password": "1234"},
+        {"name": "Francisco Braulio", "email": "brauliof863@gmail.com", "password": "1234"},
+        {"name": "Pedro Bengui", "email": "ursoul05@gmail.com.com", "password": "1234"},
+        {"name": "Ariel Manuel", "email": "arielmanuel@gmail.com", "password": "1234"},
+    ]
+    for a in admins:
+        if not db["users"].find_one({"email": a["email"]}):
+            pwd_hash = bcrypt.generate_password_hash(a["password"]).decode("utf-8")
+            doc = create_user_document(a["name"], a["email"], pwd_hash, role="ADMIN")
+            db["users"].insert_one(doc)
+
+    # Seed survey sample rows if dataset is available
     if db["survey_responses"].count_documents({}) > 0:
         return
     csv_path = Path("data/sample_dataset.csv")

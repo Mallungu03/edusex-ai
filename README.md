@@ -111,3 +111,38 @@ pytest
 Abra `docs/swagger.yaml` num editor Swagger/OpenAPI ou importe-o para ferramentas como Swagger UI e Postman.
 
 ## Autores
+
+## Integração com Hugging Face
+
+1. Crie um ficheiro `.env` na raiz do projecto com a sua chave HF:
+
+```
+HF_TOKEN=seu_token_aqui
+```
+
+2. Opcional: trocar o modelo preferencial
+
+```
+HF_PREFERRED_MODEL=meta-llama/Llama-3-8B-Instruct
+HF_FALLBACK_MODEL=mistralai/Mistral-7B-Instruct-v0.3
+```
+
+3. Instale dependências e execute:
+
+```bash
+pip install -r requirements.txt
+flask --app app run --debug
+```
+
+4. Endpoints AI principais:
+
+- `POST /api/v2/chat` body: {"message": "...", "user_id": "..."}
+- `POST /api/v2/sentiment` body: {"text": "..."}
+- `POST /api/v2/sentiment/batch` analisa todas as respostas e grava em `sentiment_results`
+- `GET /api/v2/export-report/pdf` gera PDF com relatório AI
+- `GET /api/v2/export-report/docx` gera DOCX com relatório AI
+- `GET /api/v2/ai/insights` devolve Top 5 insights
+- `GET /api/v2/recommendations/<user_id>` devolve recomendações personalizadas
+
+Notas de segurança: o token da Hugging Face é lido exclusivamente a partir de `os.getenv("HF_TOKEN")` e nunca é exposto nas respostas da API.
+

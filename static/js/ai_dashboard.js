@@ -1,10 +1,12 @@
 async function loadAiDashboard() {
-  const [comparisonResponse, trendsResponse, profilesResponse, alertsResponse, insightsResponse] = await Promise.all([
+  const [comparisonResponse, trendsResponse, profilesResponse, alertsResponse, insightsResponse, aiStatusResponse, sentimentStatsResponse] = await Promise.all([
     apiFetch("/analytics/model-comparison"),
     apiFetch("/analytics/trends"),
     apiFetch("/analytics/risk-profiles"),
     apiFetch("/analytics/alerts"),
     apiFetch("/analytics/insights"),
+    apiFetch("/api/v2/ai/status"),
+    apiFetch("/api/v2/sentiment/stats"),
   ]);
   if (!comparisonResponse || !trendsResponse || !profilesResponse || !alertsResponse || !insightsResponse) return;
   const comparison = await comparisonResponse.json();
@@ -40,6 +42,28 @@ async function loadAiDashboard() {
     options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom" } } },
   });
   document.querySelector("#aiAlerts").innerHTML = alerts.map((alert) => `<div class="alert alert-warning py-2"><strong>${alert.severity}</strong> ${alert.message}</div>`).join("") || "<p class='text-secondary'>Sem alertas críticos.</p>";
+
+  // Exibe modelo usado
+  if (aiStatusResponse) {
+    const aiStatus = await aiStatusResponse.json();
+    document.querySelector("#modelName").textContent = aiStatus.preferred_model || "desconhecido";
+  }
+
+  // Mostra estatísticas de sentimento
+  if (sentimentStatsResponse) {
+    const stat = await sentimentStatsResponse.json();
+    const counts = stat.counts || { positive: 0, neutral: 0, negative: 0 };
+    document.querySelector("#sentimentTotal").textContent = stat.total || 0;
+    const ctx = document.querySelector("#sentimentChart");
+    new Chart(ctx, {
+      type: "doughnut",
+      data: {
+        labels: ["Positive", "Neutral", "Negative"],
+        datasets: [{ data: [counts.positive || 0, counts.neutral || 0, counts.negative || 0], backgroundColor: ["#2a9d8f", "#f2c94c", "#d95d39"] }],
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom" } } },
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

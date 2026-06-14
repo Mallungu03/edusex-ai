@@ -28,3 +28,18 @@ if (trainBtn) {
     renderJson(trainResult, await response.json());
   });
 }
+
+// Load AI metrics for admin monitoring
+async function loadAiMetrics() {
+  const res = await apiFetch('/api/v2/ai/metrics');
+  if (!res) return;
+  const data = await res.json();
+  document.querySelector('#aiTotal').textContent = data.total_calls || 0;
+  document.querySelector('#aiErrors').textContent = data.errors || 0;
+  document.querySelector('#aiLatency').textContent = data.avg_latency || 0;
+  document.querySelector('#aiModels').textContent = JSON.stringify(data.models || {}, null, 2);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadAiMetrics();
+});

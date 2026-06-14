@@ -13,22 +13,36 @@ REQUIRED_FIELDS = [
     "province",
     "municipality",
     "receivedSexEducation",
+    "who_talked",
     "sourceOfInformation",
     "schoolEducation",
+    "parents_main_educators",
+    "support_structure",
+    "support_structure_location",
+    "had_sexual_relations",
+    "had_std",
+    "std_details",
+    "contraceptiveUse",
+    "contraceptive_methods",
     "needMoreInformation",
     "pressuredToHaveSex",
+    "friends_discuss",
     "feelsEmbarrassed",
-    "contraceptiveUse",
 ]
 
 
 BOOLEAN_FIELDS = [
     "receivedSexEducation",
     "schoolEducation",
+    "parents_main_educators",
+    "support_structure",
+    "had_sexual_relations",
+    "had_std",
+    "contraceptiveUse",
     "needMoreInformation",
     "pressuredToHaveSex",
+    "friends_discuss",
     "feelsEmbarrassed",
-    "contraceptiveUse",
 ]
 
 
@@ -68,17 +82,27 @@ def validate_survey_payload(payload: dict) -> tuple[bool, str]:
 
 def create_survey_document(payload: dict, user_id: str | None = None) -> dict:
     """Cria o documento survey_responses já normalizado."""
-
     document = {
         "age": int(payload["age"]),
         "gender": str(payload["gender"]).strip(),
         "province": str(payload["province"]).strip(),
         "municipality": str(payload["municipality"]).strip(),
-        "sourceOfInformation": str(payload["sourceOfInformation"]).strip(),
+        "sourceOfInformation": str(payload.get("sourceOfInformation", "")).strip(),
+        "who_talked": str(payload.get("who_talked", "")).strip(),
+        "support_structure_location": str(payload.get("support_structure_location", "")).strip(),
+        "std_details": str(payload.get("std_details", "")).strip(),
+        "contraceptive_methods": payload.get("contraceptive_methods", []),
         "created_at": now_utc(),
     }
+
+    # Normaliza booleanos conhecidos
     for field in BOOLEAN_FIELDS:
-        document[field] = to_bool(payload[field])
+        document[field] = to_bool(payload.get(field, False))
+
+    # Campos opcionais adicionais que podem aparecer no payload
+    document["parents_main_educators"] = to_bool(payload.get("parents_main_educators", False))
+    document["support_structure_location"] = str(payload.get("support_structure_location", "")).strip()
+    document["std_details"] = str(payload.get("std_details", "")).strip()
     if user_id:
         document["user_id"] = str(user_id)
     return document

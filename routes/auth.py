@@ -13,7 +13,16 @@ auth_bp = Blueprint("auth", __name__, url_prefix="/auth")
 def register():
     """POST /auth/register cria conta de utilizador."""
 
-    response, status = register_user(request.get_json() or {})
+    payload = request.get_json() or {}
+    response, status = register_user(payload)
+    # Se registo bem sucedido, cria tokens e inicia sessao automaticamente.
+    if status == 201 and response.get("user"):
+        user = response["user"]
+        # cria tokens JWT com claims mínimos
+        claims = {"role": user["role"], "name": user["name"]}
+        access = create_access_token(identity=user["email"], additional_claims=claims)
+        refresh = create_refresh_token(identity=user["email"], additional_claims=claims)
+        return jsonify({"message": response.get("message"), "user": user, "access_token": access, "refresh_token": refresh}), 201
     return jsonify(response), status
 
 

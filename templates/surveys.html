@@ -4,22 +4,72 @@
 <section class="panel">
   <form id="surveyForm" class="row g-3">
     <div class="col-md-2"><input class="form-control" name="age" type="number" min="10" max="80" placeholder="Idade" required></div>
-    <div class="col-md-3"><input class="form-control" name="gender" placeholder="Sexo" required></div>
+    <div class="col-md-3">
+      <select class="form-select" name="gender" required>
+        <option value="">Sexo</option>
+        <option value="M">M</option>
+        <option value="F">F</option>
+      </select>
+    </div>
     <div class="col-md-3"><input class="form-control" name="province" placeholder="Província" required></div>
     <div class="col-md-4"><input class="form-control" name="municipality" placeholder="Município" required></div>
     <div class="col-md-4">
       <select class="form-select" name="sourceOfInformation" required>
         <option value="">Fonte de informação</option>
-        <option>Escola</option><option>Família</option><option>Colegas</option><option>Redes sociais</option><option>Serviços de saúde</option>
+        <option>Escola</option><option>Família</option><option>Colegas</option><option>Internet</option><option>Serviços de saúde</option>
       </select>
     </div>
-    <div class="col-md-8 checks">
+    <div class="col-12">
+      <label class="form-label">Quem te falou sobre educação sexual? (marca todas aplicáveis)</label>
+      <div class="checks">
+        <label><input type="checkbox" name="who_talked" value="Pais"> Pais</label>
+        <label><input type="checkbox" name="who_talked" value="Irmãos/as"> Irmãos/as</label>
+        <label><input type="checkbox" name="who_talked" value="Colegas"> Colegas</label>
+        <label><input type="checkbox" name="who_talked" value="Médico/a"> Médico/a</label>
+        <label><input type="checkbox" name="who_talked" value="Professor/a"> Professor/a</label>
+        <label><input type="checkbox" name="who_talked" value="Outro"> Outro</label>
+      </div>
+    </div>
+    <div class="col-md-4 checks">
       <label><input type="checkbox" name="receivedSexEducation"> Recebeu educação sexual</label>
       <label><input type="checkbox" name="schoolEducation"> Educação sexual escolar</label>
       <label><input type="checkbox" name="needMoreInformation"> Precisa de mais informação</label>
       <label><input type="checkbox" name="pressuredToHaveSex"> Sofreu pressão social</label>
       <label><input type="checkbox" name="feelsEmbarrassed"> Sente vergonha</label>
-      <label><input type="checkbox" name="contraceptiveUse"> Usa contraceptivos</label>
+      <label><input type="checkbox" name="friends_discuss"> Amigos discutem</label>
+    </div>
+    <div class="col-md-8">
+      <label class="form-label">Achas importante existir alguma estrutura/gabinete de apoio?</label>
+      <label><input type="checkbox" name="support_structure"> Sim</label>
+      <div class="mt-2">
+        <select class="form-select" name="support_structure_location">
+          <option value="">Local preferido (opcional)</option>
+          <option>Na escola como disciplina específica</option>
+          <option>Na escola, num gabinete de apoio</option>
+          <option>Outro</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Já tiveste relações sexuais?</label>
+      <label><input type="radio" name="had_sexual_relations" value="true"> Sim</label>
+      <label><input type="radio" name="had_sexual_relations" value="false" checked> Não</label>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Já tiveste alguma doença sexualmente transmissível?</label>
+      <label><input type="radio" name="had_std" value="true"> Sim</label>
+      <label><input type="radio" name="had_std" value="false" checked> Não</label>
+      <input class="form-control mt-2" name="std_details" placeholder="Se sim, qual? (opcional)">
+    </div>
+    <div class="col-md-8">
+      <label class="form-label">Usas algum método contraceptivo? (se sim marque os métodos)</label>
+      <label><input type="checkbox" name="contraceptiveUse"> Sim</label>
+      <div class="checks mt-2">
+        <label><input type="checkbox" name="contraceptive_methods" value="Pílula"> Pílula</label>
+        <label><input type="checkbox" name="contraceptive_methods" value="Preservativo"> Preservativo</label>
+        <label><input type="checkbox" name="contraceptive_methods" value="Pílula do dia seguinte"> Pílula do dia seguinte</label>
+        <label><input type="checkbox" name="contraceptive_methods" value="Outro"> Outro</label>
+      </div>
     </div>
     <div class="col-12"><button class="btn btn-primary" type="submit">Guardar resposta</button></div>
   </form>
