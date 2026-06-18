@@ -1,9 +1,9 @@
 """Rotas de autenticação JWT."""
 
 from flask import Blueprint, jsonify, request
-from flask_jwt_extended import create_access_token, create_refresh_token, get_jwt, jwt_required
+from flask_jwt_extended import create_access_token, create_refresh_token
 
-from services.auth_service import authenticate_user, create_api_key, get_current_user, register_user, revoke_token
+from services.auth_service import authenticate_user, create_api_key, get_current_user, register_user
 
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/auth")
@@ -44,40 +44,30 @@ def login():
 
 
 @auth_bp.post("/logout")
-@jwt_required()
 def logout():
-    """POST /auth/logout revoga o token atual em memória."""
+    """POST /auth/logout devolve mensagem de sessão terminada."""
 
-    revoke_token(get_jwt()["jti"])
     return jsonify({"message": "Sessão terminada."})
 
 
 @auth_bp.post("/refresh")
-@jwt_required(refresh=True)
 def refresh():
-    """POST /auth/refresh gera novo access_token a partir do refresh_token."""
+    """POST /auth/refresh não requer autenticação no modo público."""
 
-    user = get_current_user()
-    return jsonify({
-        "access_token": create_access_token(
-            identity=user["email"],
-            additional_claims={"role": user["role"], "name": user["name"]},
-        )
-    })
+    return jsonify({"message": "Refresh não disponível sem autenticação."}), 400
 
 
 @auth_bp.get("/profile")
-@jwt_required()
 def profile():
-    """GET /auth/profile devolve o utilizador autenticado."""
+    """GET /auth/profile devolve o utilizador, se houver."""
 
     return jsonify({"user": get_current_user()})
 
 
 @auth_bp.post("/api-keys")
-@jwt_required()
 def api_keys():
-    """POST /auth/api-keys cria API key para o utilizador autenticado."""
+    """POST /auth/api-keys cria uma API key pública."""
 
-    user = get_current_user()
-    return jsonify(create_api_key(user["email"])), 201
+    payload = request.get_json(silent=True) or {}
+    owner = payload.get("owner") or "public"
+    return jsonify(create_api_key(owner)), 201

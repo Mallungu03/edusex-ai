@@ -1,7 +1,6 @@
 """Rotas de analytics protegidas por JWT."""
 
 from flask import Blueprint, jsonify
-from flask_jwt_extended import jwt_required
 
 from ml.hierarchical_clustering import hierarchical_clusters, risk_profiles
 from ml.model_comparison import compare_models
@@ -20,7 +19,6 @@ analytics_bp = Blueprint("analytics", __name__, url_prefix="/analytics")
 
 
 @analytics_bp.get("/dashboard")
-@jwt_required()
 def dashboard():
     """GET /analytics/dashboard alimenta cards e gráficos Chart.js."""
 
@@ -28,7 +26,6 @@ def dashboard():
 
 
 @analytics_bp.get("/regions")
-@jwt_required()
 def regions():
     """GET /analytics/regions devolve ranking regional de desinformação."""
 
@@ -36,7 +33,6 @@ def regions():
 
 
 @analytics_bp.get("/insights")
-@jwt_required()
 def insights():
     """GET /analytics/insights alimenta resumo automatico dos dados."""
 
@@ -44,7 +40,6 @@ def insights():
 
 
 @analytics_bp.get("/trends")
-@jwt_required()
 def trends():
     """GET /analytics/trends alimenta previsoes futuras."""
 
@@ -52,7 +47,6 @@ def trends():
 
 
 @analytics_bp.get("/alerts")
-@jwt_required()
 def alerts():
     """GET /analytics/alerts alimenta centro de alertas."""
 
@@ -60,7 +54,6 @@ def alerts():
 
 
 @analytics_bp.get("/model-comparison")
-@jwt_required()
 def model_comparison():
     """GET /analytics/model-comparison compara modelos para a UI."""
 
@@ -68,7 +61,6 @@ def model_comparison():
 
 
 @analytics_bp.get("/hierarchical-clusters")
-@jwt_required()
 def hierarchical():
     """GET /analytics/hierarchical-clusters compara clusterizacao."""
 
@@ -76,7 +68,6 @@ def hierarchical():
 
 
 @analytics_bp.get("/risk-profiles")
-@jwt_required()
 def profiles():
     """GET /analytics/risk-profiles devolve perfis A-D."""
 
@@ -84,7 +75,6 @@ def profiles():
 
 
 @analytics_bp.post("/myth-detector")
-@jwt_required()
 def myth_detector():
     """POST /analytics/myth-detector classifica mito ou verdade."""
 
@@ -94,7 +84,6 @@ def myth_detector():
 
 
 @analytics_bp.post("/recommendations")
-@jwt_required()
 def recommendations():
     """POST /analytics/recommendations devolve recomendacoes personalizadas."""
 
@@ -104,7 +93,6 @@ def recommendations():
 
 
 @analytics_bp.get("/report-text")
-@jwt_required()
 def report_text():
     """GET /analytics/report-text devolve relatorio automatico em texto."""
 
@@ -112,7 +100,6 @@ def report_text():
 
 
 @analytics_bp.post("/explain")
-@jwt_required()
 def explain():
     """POST /analytics/explain devolve predicao explicavel."""
 

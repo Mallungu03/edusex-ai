@@ -14,7 +14,7 @@ from ml.model_comparison import compare_models
 from ml.trend_prediction import predict_trends
 from services.alert_engine import generate_alerts
 from services.analytics_service import all_surveys, regional_disinformation
-from services.auth_service import api_key_is_valid
+# no auth guard required for public API v2
 from services.data_insights import top_insights
 from services.recommendation_engine import recommend_for_user
 from services.report_generator import export_report, generate_report_text
@@ -31,30 +31,6 @@ api_v2_bp = Blueprint("api_v2", __name__, url_prefix="/api/v2")
 RATE_BUCKETS = defaultdict(deque)
 RATE_LIMIT = 60
 WINDOW_SECONDS = 60
-
-
-def require_api_key_and_rate_limit():
-    """Valida API key e aplica limite de 60 pedidos por minuto."""
-
-    key = request.headers.get("X-API-Key")
-    if not api_key_is_valid(key):
-        return jsonify({"message": "API key ausente ou invalida."}), 401
-
-    now = time()
-    bucket = RATE_BUCKETS[key]
-    while bucket and now - bucket[0] > WINDOW_SECONDS:
-        bucket.popleft()
-    if len(bucket) >= RATE_LIMIT:
-        return jsonify({"message": "Limite de pedidos excedido. Tente novamente em instantes."}), 429
-    bucket.append(now)
-    return None
-
-
-@api_v2_bp.before_request
-def guard_v2():
-    """Protege toda a API v2 antes de chamar a rota final."""
-
-    return require_api_key_and_rate_limit()
 
 
 @api_v2_bp.get("/insights")

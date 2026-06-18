@@ -19,30 +19,19 @@ async function apiFetch(url, options = {}) {
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }
-  const response = await fetch(url, { ...options, headers });
-  if (response.status === 401 && !location.pathname.includes("register") && location.pathname !== "/") {
-    localStorage.clear();
-    location.href = "/";
-    return null;
-  }
-  return response;
+  return await fetch(url, { ...options, headers });
 }
 
 function requireAuth() {
-  if (!getToken() && !["/", "/register"].includes(location.pathname)) {
-    location.href = "/";
-  }
+  return true;
 }
 
 function updateNavigation() {
   const user = getUser();
   const badge = document.querySelector("#userBadge");
-  if (badge && user) {
-    badge.textContent = `${user.name} · ${user.role}`;
+  if (badge) {
+    badge.textContent = user ? `${user.name} · ${user.role}` : "";
   }
-  document.querySelectorAll(".admin-only").forEach((element) => {
-    element.classList.toggle("hidden", !user || user.role !== "ADMIN");
-  });
   const logout = document.querySelector("#logoutBtn");
   if (logout) {
     logout.addEventListener("click", async () => {
