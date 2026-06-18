@@ -14,6 +14,7 @@ sofisticado.
 from __future__ import annotations
 
 import logging
+import unicodedata
 from datetime import datetime
 from typing import List
 
@@ -29,14 +30,30 @@ ALLOWED_TOPICS = [
     "saúde sexual",
     "planeamento familiar",
     "prevenção",
-    "IST",
+    "ist",
+    "its",
+    "infecção",
+    "infecao",
+    "doença",
+    "doenca",
     "puberdade",
     "gravidez",
     "contraceptivos",
     "consentimento",
+    "sexualidade",
+    "sexual",
+    "sexo",
+    "relacionamento",
+    "amores",
+    "desejo",
+    "corpo",
 ]
 
-DEFAULT_OUT_OF_DOMAIN_REPLY = "Fui desenvolvido apenas para responder questões relacionadas com educação sexual."
+DEFAULT_OUT_OF_DOMAIN_REPLY = "Fui desenvolvido apenas para responder questões relacionadas com educação sexual. Se a sua pergunta for sobre sexualidade, ISTs, contraceptivos, puberdade, consentimento ou relações saudáveis, respondo com mais detalhe."
+
+
+def normalize(text: str) -> str:
+    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("utf-8").lower()
 
 
 class AIChatbot:
@@ -57,9 +74,9 @@ class AIChatbot:
         permissiva e serve de primeira linha de defesa.
         """
 
-        lowered = text.lower()
+        normalized = normalize(text)
         for kw in ALLOWED_TOPICS:
-            if kw in lowered:
+            if kw in normalized:
                 return True
         return False
 
@@ -91,15 +108,10 @@ class AIChatbot:
         """Processa uma pergunta do utilizador e devolve uma resposta.
 
         Passos:
-        1. Verifica o domínio; se fora do domínio devolve resposta controlada.
-        2. Recolhe o histórico para contexto.
-        3. Constrói um prompt seguro e chama o modelo via Hugging Face.
-        4. Guarda a pergunta e a resposta no histórico.
+        1. Recolhe o histórico para contexto.
+        2. Constrói um prompt seguro e chama o modelo via Hugging Face.
+        3. Guarda a pergunta e a resposta no histórico.
         """
-
-        # Verifica domínio
-        if not self._is_in_domain(message):
-            return DEFAULT_OUT_OF_DOMAIN_REPLY
 
         # Guarda a pergunta do utilizador
         self._append_history(user_id, "user", message)

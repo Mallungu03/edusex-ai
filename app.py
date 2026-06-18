@@ -16,7 +16,6 @@ from config import Config
 from database.mongodb import get_db, init_db
 from models.survey import create_survey_document
 from routes.analytics import analytics_bp
-from routes.api import api_bp
 from routes.api_v2 import api_v2_bp
 from routes.auth import auth_bp
 from routes.chatbot import chatbot_bp
@@ -48,7 +47,6 @@ def create_app(config_class=Config):
     app.register_blueprint(analytics_bp)
     app.register_blueprint(chatbot_bp)
     app.register_blueprint(ml_bp)
-    app.register_blueprint(api_bp)
     app.register_blueprint(api_v2_bp)
 
     register_pages(app)

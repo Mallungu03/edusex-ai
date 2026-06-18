@@ -148,21 +148,135 @@ canvas {
   font-weight: 800;
 }
 
+.score-pill.success {
+  background: #daf7eb;
+  color: #12735b;
+}
+
+.score-pill.warning {
+  background: #fff4dc;
+  color: #b46a09;
+}
+
+.score-pill.danger {
+  background: #ffe8e8;
+  color: #9f2a2a;
+}
+
+.prediction-result {
+  min-height: 360px;
+}
+
+.prediction-card {
+  display: grid;
+  gap: 18px;
+  border-radius: 12px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid #e3eaec;
+}
+
+.prediction-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.prediction-label,
+.metric-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.metric-value {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+.prediction-metrics {
+  display: grid;
+  gap: 14px;
+}
+
+.prediction-section h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.prediction-section {
+  padding-top: 12px;
+  border-top: 1px solid #edf1f2;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 999px;
+  background: #eef3f5;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.25s ease;
+}
+
+.progress-bar.success {
+  background: #26a17b;
+}
+
+.progress-bar.warning {
+  background: #d29d34;
+}
+
+.progress-bar.danger {
+  background: #d02f36;
+}
+
 .clean-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .clean-list li {
   display: flex;
-  gap: 8px;
-  align-items: start;
-  padding: 6px 0;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 0;
 }
 
-.progress {
-  height: 10px;
-  border-radius: 999px;
+.clean-list li span {
+  color: var(--primary);
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.muted-text {
+  color: var(--muted);
+}
+
+.empty-state,
+.alert-box {
+  font-size: 0.96rem;
+  color: var(--muted);
+  padding: 26px;
+  text-align: center;
+  border: 1px dashed #d8e2e4;
+  border-radius: 12px;
+  background: #fbfcfd;
+}
+
+.alert-box {
+  color: #9f2a2a;
+  border-color: #f5d2d2;
+  background: #fff1f1;
 }
 
 #map {

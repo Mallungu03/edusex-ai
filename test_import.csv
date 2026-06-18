@@ -1,0 +1,4 @@
+age,gender,province,municipality,receivedSexEducation,who_talked,sourceOfInformation,schoolEducation,parents_main_educators,support_structure,support_structure_location,had_sexual_relations,had_std,std_details,contraceptiveUse,contraceptive_methods,needMoreInformation,pressuredToHaveSex,friends_discuss,feelsEmbarrassed
+17,Male,Maputo,Maputo City,Sim,Parents,School,Sim,Sim,Sim,Community Clinic,No,No,,Sim,condom;pill,Sim,No,Sim,No
+22,Female,Luanda,Luanda District,Nao,Friends,Internet,Sim,Nao,Sim,Health Center,Sim,Sim,Chlamydia,Sim,condom,Sim,Sim,Sim,Sim
+15,Other,Gaza,Chókwè,Sim,Teacher,Family,Sim,Sim,Nao,,No,No,,Nao,,Sim,No,Sim,Sim
